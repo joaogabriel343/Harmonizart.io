@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <title>HARMONIZART</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+    <header>
+        <img src="./img/logo.png" alt="Logo">
+        <div class="header-content">
+            <h1>Agendamento Aulas Musicais</h1>
+            <nav>
+                <a href="#professores">Professores</a>
+                <a href="#galeria">Sala</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod praesentium nemo quis natus quos ipsam molestiae aliquid dolorem quibusdam. Autem qui commodi illo ipsa deserunt atque, temporibus mollitia vel ipsam?</p>
+    </section>
+
+    <section id="videos" class="video">
+        <h2>Vídeos</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+        <p>Assista ao nosso vídeo de apresentação e conheça mais sobre nossas aulas!</p>
+    </section>
+
+
+    <section id="professores">
+        <h2>Nossos Professores</h2>
+        <div class="professor-card">
+            <h3>Luiz</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis nesciunt quae saepe aliquid aut qui dignissimos, corporis deleniti nisi praesentium veritatis earum odio ea delectus et officia ratione aspernatur a.</p>
+            <img src="./img/professor.jpg" alt="Professor Luiz">
+        </div>
+        <div class="professor-card">
+            <h3>Laura</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptatibus, quas eligendi veritatis aut minima sequi mollitia officia nobis atque dolorem, a ad ratione eos modi quisquam minus facere deserunt.</p>
+            <img src="./img/professora.jpg" alt="Professora Laura">
+        </div>
+    </section>
+
+    <section id="galeria" class="gallery">
+        <h2>Sala de Aula</h2>
+        <div class="parallax"></div> 
+        <img src="./img/sala-de aula.jpg" alt="Sala de aula" class="sala">
+    </section>
+    <section id="contato" class="contact">
+        <h2>Contato</h2>
+        <p>Para agendar uma aula ou tirar dúvidas, entre em contato conosco pelo WhatsApp:</p>
+        <a href="https://wa.me/5535999823833?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20saber%20mais%20sobre%20as%20Aulas!!" target="_blank">Fale Conosco no WhatsApp</a>
+    </section>
+  
+  
+    
+    <footer>
+        <p>&copy; 2025 Agendamento de Aulas Musicais. Todos os direitos reservados.</p>
+    </footer>
+
+    <div class="whatsapp-button">
+        <a href="https://wa.me/5535999823833?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20saber%20mais%20sobre%20as%20Aulas!!" target="_blank"><img src="./img/icons8-whatsapp.svg" alt="whatsapp-button"><br>Entre em Contato</a>
+    </div>
+
+    <div id="cookie-banner" class="cookie-banner">
+        <p>Este site usa cookies para garantir a melhor experiência. <a href="https://joaogabriel343.github.io/Cookies.Harmonizart/" target="_blank" class="saiba-mais">Saiba Mais</a></p>
+        <button id="accept-cookies">Aceitar</button>
+    </div>
+    
+    <div class="chat-icon" onclick="toggleChat()">
+        💬
+    </div>
+    <div class="chat-container" id="chat-container">
+        <div class="chat-header">
+            <img src="./img/apollo.jpg" alt="Apollo" class="chat-avatar" />
+            <span class="chat-name">Apollo</span>
+            <button class="close-btn" onclick="toggleChat()">×</button>
+        </div>
+        <div class="chat-box" id="chat-box">
+            <div class="message bot-message">
+                Olá! Como posso te ajudar hoje?
+            </div>
+        </div>
+        <div class="chat-input-container">
+            <input type="text" id="user-input" placeholder="Digite sua mensagem..." />
+            <button onclick="sendMessage()">Enviar</button>
+        </div>
+    </div>
+    
+    
+
+    <script src="./assets/js/script.js"></script>
+
+   
+    
+</body>
+</html>
